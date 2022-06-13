@@ -1,0 +1,19 @@
+import { ModuleAccessApi_generated } from './api.generated';
+
+/**
+ * REST API classes for model in typescript (nest.js) for ModuleAccess
+ * NOTE: EDIT AT WILL, this is intially generated and then left alone. Your changes will not be affected by subsequent code generation runs
+ * the specification of what operations one user can perform in one module
+ */
+
+/**
+ * ModuleAccess
+ * the specification of what operations one user can perform in one module
+ */
+export class ModuleAccessApi extends ModuleAccessApi_generated {
+	/**
+	 * place your custom code here
+	 */
+}
+
+

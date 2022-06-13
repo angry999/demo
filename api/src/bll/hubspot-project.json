@@ -1,0 +1,576 @@
+{
+    "name": "Project",
+    "labels": {
+        "singular": "Project",
+        "plural": "Projects"
+    },
+    "primaryDisplayProperty": "name",
+    "requiredProperties": [
+        "id",
+        "sponsor_label",
+        "issuer_id"
+    ],
+    "properties": [
+        {
+            "description": "the unique internal identifier (primary key) of the row",
+            "label": "id",
+            "name": "id",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the human readable identifier of the project",
+            "label": "project_no",
+            "name": "project_no",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the spoken identifier of the project",
+            "label": "name",
+            "name": "name",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the registered, legal representation of the human readable identifier",
+            "label": "legal_name",
+            "name": "legal_name",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "a verbose description of the project, essentially a first level marketing description",
+            "label": "contents",
+            "name": "contents",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "if true, show the sponsor label",
+            "label": "sponsor_label",
+            "name": "sponsor_label",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "the id of the organization that is issuing the project",
+            "label": "issuer_id",
+            "name": "issuer_id",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "a classification of where the project is along in its life cycle",
+            "label": "project_stage",
+            "name": "project_stage",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "description not specified",
+            "label": "capital_type",
+            "name": "capital_type",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the type of asset being offered",
+            "label": "asset_type",
+            "name": "asset_type",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the type of development",
+            "label": "development_type",
+            "name": "development_type",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the amount that is being raised",
+            "label": "offering_amount",
+            "name": "offering_amount",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the expected range of annual return",
+            "label": "annual_irr",
+            "name": "annual_irr",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the percentage of overall value the load represents",
+            "label": "loan_to_value_ratio",
+            "name": "loan_to_value_ratio",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the currency the prices are quoted in",
+            "label": "currency_label",
+            "name": "currency_label",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the total number of shares for purchase",
+            "label": "total_share",
+            "name": "total_share",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the current price shares are being offered for purchase at",
+            "label": "share_price",
+            "name": "share_price",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the perceived market value of the shares",
+            "label": "market_price",
+            "name": "market_price",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the price the shares have most recently transacted at",
+            "label": "sale_price",
+            "name": "sale_price",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "description not specified",
+            "label": "default_share",
+            "name": "default_share",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the minimum number of shares that must be purchased to participate in this project",
+            "label": "min_share",
+            "name": "min_share",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the maximum number of shares that can be owned when a party is participating in the project",
+            "label": "max_share",
+            "name": "max_share",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the percentage rate, expressed as a string, interest will be charged at",
+            "label": "interest_rate",
+            "name": "interest_rate",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the length of the investment (typed free form)",
+            "label": "investment_term",
+            "name": "investment_term",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "description not specified",
+            "label": "minimum_duration_units",
+            "name": "minimum_duration_units",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "description not specified",
+            "label": "maximum_duration_units",
+            "name": "maximum_duration_units",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "the period of time used in minimum duration",
+            "label": "minimum_duration_type",
+            "name": "minimum_duration_type",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the period of time used in maximum duration",
+            "label": "maximum_duration_type",
+            "name": "maximum_duration_type",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the number of days left for funding activities",
+            "label": "daysleft_flag",
+            "name": "daysleft_flag",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "if true, all funds have been raised and it is closed to further investments",
+            "label": "funded_flag",
+            "name": "funded_flag",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "a narrative of where/how the dividends, if any, are expected to be returned from",
+            "label": "dividend_desc",
+            "name": "dividend_desc",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "a statement of the order in which this debt is repaid compared to other debt",
+            "label": "debt_seniority",
+            "name": "debt_seniority",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "if true, it can be redeemed prior to ending",
+            "label": "redeem_ability",
+            "name": "redeem_ability",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the type of accounts and/or organizations that can take advantage of this funding",
+            "label": "investment_eligibility",
+            "name": "investment_eligibility",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the rules that must be obsered about redeeming shares",
+            "label": "redemption_info",
+            "name": "redemption_info",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the street/local address of the project",
+            "label": "address",
+            "name": "address",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the postal code of the project",
+            "label": "zip",
+            "name": "zip",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the municiple location of the porject",
+            "label": "city",
+            "name": "city",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "a description of the assets, steps and/or actions to ensure there is no loss of captial to investors",
+            "label": "credit_guarantee",
+            "name": "credit_guarantee",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the primary business the issuer engages in",
+            "label": "issuer_business",
+            "name": "issuer_business",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the name of the organization that is placing the securities",
+            "label": "agent_name",
+            "name": "agent_name",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the contact details for the registrant",
+            "label": "registrant_contact",
+            "name": "registrant_contact",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "a statement of how the issuer intends to use the funds that are raised",
+            "label": "use_of_proceeds",
+            "name": "use_of_proceeds",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "additional ^ separated name value pairs of properties about the project. eg Trustee~Some Trust Company, or such other trust company as may be selected by the Manager^Auditor~KPMG LLP^Fund Administrator~My Fund Services Ltd.",
+            "label": "additional_desc",
+            "name": "additional_desc",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "a ^ separated list of questions that the user must acknowledge prior to investing",
+            "label": "acknowledgements",
+            "name": "acknowledgements",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "a longer descriptive text for display",
+            "label": "long_desc",
+            "name": "long_desc",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "text to show as a disclaime prior to investments proceeding",
+            "label": "disclaimer_note",
+            "name": "disclaimer_note",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "if true, it should be private",
+            "label": "is_private",
+            "name": "is_private",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "description not specified",
+            "label": "allow_ineligible",
+            "name": "allow_ineligible",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "the state of the project for use in the system",
+            "label": "system_status",
+            "name": "system_status",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "if true, project has a dividend reinvestment plan available, and the user should be asked if they wish to sign up for it in the order process",
+            "label": "drip_available",
+            "name": "drip_available",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "if true, the project should use the OM programmed into the system rather than DocuSign",
+            "label": "use_system_om",
+            "name": "use_system_om",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "if true, the project does not currently allow for any further orders to be started",
+            "label": "investments_locked",
+            "name": "investments_locked",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "if true, the projects settlement date should always be the first of the following month",
+            "label": "continuous_offering",
+            "name": "continuous_offering",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "if true over subscriptions should be allowed",
+            "label": "over_subscriptions",
+            "name": "over_subscriptions",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "the ordinal position of the project displayed with others",
+            "label": "sort_order",
+            "name": "sort_order",
+            "type": "number",
+            "fieldType": "number"
+        },
+        {
+            "description": "a CSV list of the names of the trust companies involved with this project",
+            "label": "trust_company_names",
+            "name": "trust_company_names",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the point in time that funding will start being placed",
+            "label": "funding_start",
+            "name": "funding_start",
+            "type": "date",
+            "fieldType": "date"
+        },
+        {
+            "description": "the date that funding is set to cease even if its not full",
+            "label": "funding_expiry",
+            "name": "funding_expiry",
+            "type": "date",
+            "fieldType": "date"
+        },
+        {
+            "description": "the date that the investment completes/matures/ends",
+            "label": "maturity_date",
+            "name": "maturity_date",
+            "type": "date",
+            "fieldType": "date"
+        },
+        {
+            "description": "if true, this row is logically deleted. that is, its not to be used any more and is kept for historical/audit purposes only",
+            "label": "is_deleted",
+            "name": "is_deleted",
+            "type": "enumeration",
+            "fieldType": "select",
+            "options": [
+                {
+                    "label": "True",
+                    "value": "True"
+                },
+                {
+                    "label": "False",
+                    "value": "False"
+                }
+            ]
+        },
+        {
+            "description": "the id of the user that made the last change or in the case of its initial creation the user that created it",
+            "label": "last_changed",
+            "name": "last_changed",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the id of the country the project is in",
+            "label": "country",
+            "name": "country",
+            "type": "string",
+            "fieldType": "text"
+        },
+        {
+            "description": "the id of the province that the project is in",
+            "label": "province",
+            "name": "province",
+            "type": "string",
+            "fieldType": "text"
+        }
+    ],
+    "associatedObjects": [
+        "DEAL"
+    ]
+}

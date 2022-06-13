@@ -1,0 +1,77 @@
+{
+    "name": "issuer",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@amcharts/amcharts4": "^4.10.17",
+        "@date-io/date-fns": "^1.3.13",
+        "@material-ui/core": "^4.11.3",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.57",
+        "@material-ui/pickers": "^3.3.10",
+        "@material-ui/styles": "^4.11.3",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.2",
+        "bigdecimal": "^0.6.1",
+        "computer-name": "^0.1.0",
+        "cors": "^2.8.5",
+        "date-fns": "^2.20.1",
+        "enzyme": "^3.11.0",
+        "fundscraper-model-enums": "file:../../node/fundscraper-model-enums",
+        "js-md5": "^0.7.3",
+        "material-ui-image": "^3.3.1",
+        "msal": "^1.4.9",
+        "mui-datatables": "^3.7.7",
+        "portable-fetch": "^3.0.0",
+        "querystring": "^0.2.1",
+        "react": "^16.14.0",
+        "react-aad-msal": "^2.3.5",
+        "react-dnd": "^14.0.1",
+        "react-dom": "^16.14.0",
+        "react-router-dom": "^5.2.0",
+        "react-test-renderer": "^17.0.2",
+        "sinon": "^10.0.0",
+        "typescript": "^4.2.4",
+        "xlsx": "^0.16.9"
+    },
+    "scripts": {
+        "starthttps": "set HTTPS=true&&react-scripts start",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "@types/chai": "^4.2.17",
+        "@types/enzyme": "^3.10.8",
+        "@types/jest": "^26.0.21",
+        "@types/mocha": "^8.2.2",
+        "@types/mui-datatables": "^3.7.1",
+        "@types/node": "^14.14.35",
+        "@types/react-router-dom": "^5.1.7",
+        "@types/sinon": "^10.0.0",
+        "chai": "^4.3.4",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "enzyme-to-json": "^3.6.2",
+        "jest-fetch-mock": "^3.0.3",
+        "react-scripts": "^3.4.0"
+    }
+}
